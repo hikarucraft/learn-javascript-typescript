@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch"
+    "build": "tsc $npm_config_name",
+    "build:watch": "tsc --watch $npm_config_name",
+    "ts-node": "ts-node $npm_config_name"
   },
   "keywords": [],
   "author": "",
